@@ -10,7 +10,7 @@
         return x.slice(1);
       },
       print: function() {
-        return console.log.apply(null, arguments);
+        return console.log.apply(console, arguments);
       }
     };
     Context = (function() {

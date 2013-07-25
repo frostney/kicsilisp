@@ -3,7 +3,7 @@ do (root = exports ? @) ->
   stdLibrary =
     first: (x) -> x[0]
     rest: (x) -> x.slice 1
-    print: -> console.log.apply null, arguments
+    print: -> console.log.apply console, arguments
   
   class Context
     constructor: (@scope, @parent) ->
